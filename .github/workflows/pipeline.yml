@@ -1,19 +1,17 @@
-name: siddhartha pipeline
+name: siddhartha-pipeline
 
 on:
   push:
-    branchs:
+    branches:
       - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-     - name: step 1
-       run: echo "Hello, this is my first pipeline"
+      - name: Step 1 - Show current directory
+        run: pwd
 
-     - name: step 2 - Show current directory
-       run: pwd
-
-      - name: step 3 - List all files and folders
-        run: la -la
+      - name: Step 2 - List all files and folders
+        run: ls -la
