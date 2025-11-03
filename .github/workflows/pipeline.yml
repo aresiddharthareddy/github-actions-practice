@@ -12,8 +12,8 @@ jobs:
      - name: step 1
        run: echo "Hello, this is my first pipeline"
 
-     - name: step 2
+     - name: step 2 - Show current directory
        run: pwd
 
-      - name: step 3 
+      - name: step 3 - List all files and folders
         run: la -la
