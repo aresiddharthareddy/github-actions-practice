@@ -12,4 +12,8 @@ jobs:
      - name: step 1
        run: echo "Hello, this is my first pipeline"
 
+     - name: step 2
+       run: pwd
 
+      - name: step 3 
+        run: la -la
